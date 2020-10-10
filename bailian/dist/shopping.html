@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车页面</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/shopping.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/nav.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/shopping.js"></script>
+
+</head>
+
+<body>
+    <!-- 工具栏 -->
+    <div class="toolBar">
+        <div class="connter">
+            <div class="tool_left">
+                <span>百联集团旗下全渠道电商平台</span>
+                <b></b>
+            </div>
+            <div class="tool_nav">
+                <a href="#">
+                    <span>网站导航</span>
+                    <i></i>
+                </a>
+                <div class="tn_show">
+                    <dl>
+                        <dd><a href="#">百联集团官网</a></dd>
+                        <dd><a href="#">安付宝网</a></dd>
+                        <dd><a href="#">第一医药</a></dd>
+                        <dd><a href="#">OK会员网专区</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="tool_center">
+                <span>消息</span>
+            </div>
+            <div class="tool_right">
+                <ul>
+                    <li class="tool_li">
+                        <i></i>
+                        <a href="#">请登录</a>
+                        <a href="#">注册</a>
+                        <b></b>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>我的订单</span>
+                        </a>
+                        <b></b>
+
+                    </li>
+
+                    <li class="my_li">
+                        <a href="#">
+                            <span>我的百联</span>
+                            <i></i>
+                        </a>
+                        <b></b>
+                        <div class="tool_my">
+                            <ul>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的评价</a></li>
+                                <li><a href="#">我的积分</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                                <li><a href="#">我的优惠</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="tool_pay">
+                        <a href="#">
+                            <span>缴费充值</span>
+                            <i></i>
+                        </a>
+                        <b></b>
+                        <div class="payment">
+                            <div>
+                                <p>水电煤缴费</p>
+                                <ul>
+                                    <li><a href="#">缴费首页</a></li>
+                                    <li><a href="#">水费缴费</a></li>
+                                    <li><a href="#">电费缴费</a></li>
+                                    <li><a href="#">燃气缴费</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p>手机充值</p>
+                                <ul>
+                                    <li><a href="#">手机充值</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>其他缴费</p>
+                                <ul>
+                                    <li><a href="#">固话/宽带充值</a></li>
+                                    <li><a href="#">铁通缴费</a></li>
+                                    <li><a href="#">有线电视缴费</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>游戏点卡</p>
+                                <ul>
+                                    <li><a href="#">腾讯Q币充值</a></li>
+                                    <li><a href="#">盛大点券充值</a></li>
+                                    <li><a href="#">更多游戏</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <a href="#">
+                            <span>客户服务</span>
+                            <i></i>
+                        </a>
+                        <b></b>
+                        <div class="service_div">
+                            <ul>
+                                <li><a href="">在线客服</a></li>
+                                <li><a href="">帮助中心</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>掌上百联</span>
+                            <i></i>
+                        </a>
+                        <b></b>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>购物车</span>
+                        </a>
+                        <b></b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧侧边栏 -->
+    <div class="right_slidebar" id="rside">
+        <div class="right_slidebar_main">
+            <div class="main_top">
+                <div class="sidecss">
+                    <i></i>
+                    <div class="news">
+                        我的消息
+                    </div>
+                </div>
+                <div class="shopcar">
+                    <div class="car">
+                        <i></i>
+                    </div>
+                    <span>购<br>物<br>车</span>
+                    <b>0</b>
+                    <div class="sc_border"></div>
+                </div>
+
+                <div class="collect ">
+                    <i></i>
+                </div>
+                <div class="history">
+                    <i></i>
+                </div>
+            </div>
+            <div class="main_bottom">
+                <div class="qrcode">
+                    <i></i>
+                </div>
+                <div class="service">
+                    <i></i>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="right_slidebar_detail">
+            <div class="shopcar-detail-h">
+                <i class="sidebar-closed"></i>
+                <a href=""><i class="iconfont"></i></a>
+            </div>
+            <ul id="ul_prices">
+                <!-- <li id="4">
+                    <div class="sc_goodsPic">
+                        <img src="http://img12.360buyimg.com/n1/s130x130_jfs/t3013/181/252505015/481710/6a6ee10a/57983914Nf3b91795.jpg"
+                            alt="">
+                    </div>
+                    <div class="sc_goodsTitle">
+                        <p>这是商品曲奇饼干</p>
+
+                        <div class="sc_goodsNum">
+                            <div>
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delete_goodsBtn">
+                        <p id="prices">￥29</p>
+                        <button></button>
+                    </div>
+                </li> -->
+            </ul>
+            <div class="shopcar-submit">
+                <div>
+                    共<i>0</i>件商品
+                    <!-- ，总计：<span>￥</span><b>0</b> -->
+                </div>
+                <a href="" class="tomycar">去结算</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- 搜索栏 -->
+    <div class="header">
+        <div class="connter">
+            <div class="header_left">
+                <div class="hl_left">
+                    <a href=""><img src="images/header01.png" alt=""></a>
+                </div>
+                <div class="hl_right">
+                    <a href=""><img src="images/header02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="header_right">
+                <div class="search_top">
+                    <div class="search">
+                        <input type="text" class="txt" value="太阳镜" />
+                        <input class="btn" type="submit" value="搜索" />
+                    </div>
+                </div>
+
+                <div class="search_bottom">
+                    <a href="#">面膜</a>
+                    <span>|</span>
+                    <a href="#">料酒</a>
+                    <span>|</span>
+                    <a href="#">洗面奶</a>
+                    <span>|</span>
+                    <a href="#">方便面</a>
+                    <span>|</span>
+                    <a href="#">冷饮</a>
+                    <span>|</span>
+                    <a href="#">赫莲娜</a>
+                    <span>|</span>
+                    <a href="#">味全</a>
+                    <span>|</span>
+                    <a href="#">黄酒</a>
+                    <span>|</span>
+                    <a href="#">光明牛奶</a>
+                    <span>|</span>
+                    <a href="#">酱油</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="connter">
+            <div class="left">
+                <a href="#">
+                    <img src="images/clearance-nav-2.png" alt="" srcset="">
+                    超值团</a>
+            </div>
+            <div class="right">
+                <a href="">
+                    <img src="images/brand-navicon1.png" alt="">
+                    品牌团</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="top">
+        <div class="connter">
+            <div class="premium-title clearfix">
+                <div class="brand-slug">
+                    今日爆款
+                    <i>爆款直降 超值疯抢</i>
+                </div>
+            </div>
+            <div class="brand-ul-main-1 clearfix">
+                <ul>
+                    <!-- <li>
+                        <div class="brand-main-img">
+                            <img src="images/overbox01.jpg" alt="" srcset="">
+                        </div>
+                        <div class="brand-main-list-right">
+                            <a href="#">西域美农 陕西红富士一级果 净重4.5-5斤 约10颗左右（新苹果上市）</a>
+                            <div class="pice">
+                                <p>￥29.9</p>
+                                <p class="frist">参考价：39.9</p>
+                            </div>
+                            <div class="sc">
+                                <div id="0" class="sc_btn">加入购物车</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="connter">
+            <div class="top">
+                <div class="footer_left">
+                    <div class="footer_title footer_ico1">
+                        新手入门
+                    </div>
+                    <ul>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">会员介绍</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">发票说明</a></li>
+                        <li><a href="#">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="footer_dc">
+                    <div class="footer_title footer_ico2">
+                        配送服务
+                    </div>
+                    <ul>
+                        <li><a href="#">配送范围及运费</a></li>
+                        <li><a href="#">配送进度查询</a></li>
+                        <li><a href="#">自提服务</a></li>
+                        <li><a href="#">商品验货与签收</a></li>
+                    </ul>
+                </div>
+                <div class="footer_center">
+                    <div class="footer_title footer_ico3">
+                        支付方式
+                    </div>
+                    <ul>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">在线支付</a></li>
+                    </ul>
+                </div>
+                <div class="footer_after">
+                    <div class="footer_title footer_ico4">
+                        售后服务
+                    </div>
+                    <ul>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">退款说明</a></li>
+                    </ul>
+                </div>
+                <div class="footer_right">
+                    <div class="footer_title footer_ico5">
+                        商家支持
+                    </div>
+                    <ul>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">商家规则</a></li>
+                        <li><a href="#">商家常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center">
+                <img src="images/footer02.jpg" alt="">
+                <img src="images/footer03.jpg" alt="">
+                <img src="images/footer04.jpg" alt="">
+            </div>
+            <div class="bottom">
+                <div class="bt_nav">
+                    <a href="">关于我们</a>
+                    <span>|</span>
+                    <a href="">联系我们</a>
+                    <span>|</span>
+                    <a href="">加盟合作</a>
+                    <span>|</span>
+                    <a href="">诚征英才</a>
+                    <span>|</span>
+                    <a href="">友情链接</a>
+                    <span>|</span>
+                    <a href="">新零售合作</a>
+                </div>
+                <div class="copyright">
+                    百联集团有限公司版权所有
+                    <span>|</span>
+                    客服电话:400-900-8800
+                    <span>|</span>
+                    <a href="">沪ICP备15028847号-1</a>
+                </div>
+                <div class="bt_a">
+                    <a href="">互联网药品信息服务资质证书编号:沪-(非营业性)-2016-0044</a>
+                    <br>
+                    <a href="">医疗器械网络交易服务第三方平台备案凭证-(沪）网械平台备字[2020]第00002号</a>
+                    <br>
+                    <a href="">全渠道增值电信业务经营许可证</a>
+                </div>
+
+                <div class="police">
+                    <a href="">
+                        <img src="images/footer05.png" alt="">
+                        <span>沪公网安备31010102002366号</span>
+                    </a>
+                    <a href="">
+                        <img src="images/footer06.png" alt="">
+                        <span>上海工商</span>
+                    </a>
+                    <a href="">
+                        <img src="images/footer07.png" alt="">
+                        <span>经营执照</span>
+                    </a>
+                    <a href="">
+                        <img src="images/footer08.png" alt="">
+                        <span>网购大家评</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

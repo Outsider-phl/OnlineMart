@@ -1,0 +1,296 @@
+.connter {
+  width: 950px;
+  margin: 0 auto; }
+
+.register_top {
+  height: 110px; }
+
+.register_top .connter {
+  height: 110px; }
+
+.register_top .connter img {
+  float: left;
+  margin-top: 29px; }
+
+.login_main {
+  height: 566px;
+  width: 100%;
+  padding: 30px 0 25px;
+  position: relative;
+  background: url(../images/login01.jpg) no-repeat center bottom; }
+
+.login_main .login_content {
+  height: 554px;
+  width: 488px;
+  margin: 0 auto;
+  border: 6px solid #e2e2e2;
+  background: #fff; }
+
+.login_main .login_content .login_content_center {
+  width: 300px;
+  height: 464px;
+  margin: 0 auto;
+  padding: 45px 0; }
+
+.login_main .login_content .login_content_center .top ul .title {
+  height: 50px;
+  width: 300px; }
+
+.login_main .login_content .login_content_center .top ul .title div {
+  width: 149px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 15px;
+  float: left;
+  text-align: right;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+  font-weight: 700; }
+
+.login_main .login_content .login_content_center .top ul .title .left {
+  text-align: left;
+  border-right: 1px solid #999;
+  color: #333; }
+
+.login_main .login_content .login_content_center .top ul .scan {
+  height: 240px;
+  padding-top: 20px;
+  display: none; }
+
+.login_main .login_content .login_content_center .top ul .scan img {
+  width: 140px;
+  height: 140px;
+  display: block;
+  margin: 14px auto;
+  border: 1px solid #ddd; }
+
+.login_main .login_content .login_content_center .top ul .scan p {
+  text-align: center;
+  font-size: 12px; }
+
+.login_main .login_content .login_content_center .top ul .scan p i {
+  color: red; }
+
+.login_main .login_content .login_content_center .top ul .member {
+  height: 240px;
+  width: 300px; }
+
+.login_main .login_content .login_content_center .top ul .member .login-item {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  position: relative; }
+
+.login_main .login_content .login_content_center .top ul .member input {
+  padding-left: 35px;
+  padding-right: 13px;
+  width: 250px;
+  font-size: 12px;
+  vertical-align: middle;
+  height: 34px;
+  background: #fff;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #cccccc;
+  text-indent: 0;
+  border-radius: 4px; }
+
+.login_main .login_content .login_content_center .top ul .member .login-item i {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.login_main .login_content .login_content_center .top ul .member .login-font {
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 10px;
+  clear: both;
+  color: #666; }
+
+.login_main .login_content .login_content_center .top ul .member .login-font .fr {
+  float: right; }
+
+.login_main .login_content .login_content_center .top ul .member .login-font .fr a {
+  font-size: 12px; }
+
+.login_main .login_content .login_content_center .top ul .member .in_bu button {
+  color: #ffffff;
+  background: #e6133c;
+  font-size: 16px;
+  height: 36px;
+  width: 300px;
+  cursor: pointer;
+  padding-left: 0;
+  border: 0;
+  border-radius: 4px;
+  text-align: center; }
+
+.login_main .login_content .login_content_center .top ul .member .prompt {
+  display: none; }
+
+.login_main .login_content .login_content_center .top ul .scan .style_txt {
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px; }
+
+.login_main .login_content .login_content_center .top ul .scan .style_txt i {
+  padding: 10px 0 10px 30px;
+  margin: 0 10px;
+  background-size: 24px;
+  color: #999; }
+
+.login_main .login_content .login_content_center .top ul .scan .style_txt .style_txt01 {
+  background: url(../images/login09.png) no-repeat 0 center;
+  background-size: 24px; }
+
+.login_main .login_content .login_content_center .top ul .scan .style_txt .style_txt02 {
+  background: url(../images/login10.png) no-repeat 0 center;
+  background-size: 24px; }
+
+.login_main .login_content .login_content_center .top ul .scan .style_txt .style_txt03 {
+  background: url(../images/login11.png) no-repeat 0 center;
+  background-size: 24px; }
+
+.login_main .login_content .login_content_center .center {
+  height: 52px;
+  text-align: right;
+  line-height: 52px; }
+
+.login_main .login_content .login_content_center .center a {
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  text-align: center;
+  margin: 0 0 10px 30px;
+  font-size: 12px; }
+
+.login_main .login_content .login_content_center .center .login-a-fl {
+  color: #08c;
+  background: 0 0;
+  float: left;
+  padding-left: 0; }
+
+.login_main .login_content .login_content_center .center #solidCart {
+  background: url(../images/login04.png) no-repeat left;
+  padding-left: 23px;
+  color: #666; }
+
+.login_main .login_content .login_content_center .other {
+  width: 300px;
+  height: 49px;
+  margin: 8px 0;
+  line-height: 49px;
+  text-align: center;
+  position: relative; }
+
+.login_main .login_content .login_content_center .other:before,
+.login_main .login_content .login_content_center .other:after {
+  position: absolute;
+  background: #ccc;
+  content: "";
+  height: 1px;
+  top: 50%;
+  width: 85px; }
+
+.login_main .login_content .login_content_center .other:before {
+  left: 10px; }
+
+.login_main .login_content .login_content_center .other:after {
+  right: 10px; }
+
+.login_main .login_content .login_content_center .other span {
+  background: #fff;
+  padding: 0 15px;
+  color: #999;
+  line-height: 49px;
+  font-size: 12px; }
+
+.login_main .login_content .login_content_center .bottom {
+  width: 320px;
+  margin-left: -10px;
+  margin-top: 10px;
+  height: 22px;
+  text-align: center; }
+
+.login_main .login_content .login_content_center .bottom a {
+  display: inline-block;
+  width: 66px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  text-align: center;
+  float: left;
+  margin: 0 0 10px 30px; }
+
+.footer {
+  height: 179px;
+  padding-top: 20px; }
+
+.footer .connter {
+  height: 179px; }
+
+.footer .connter .bottom {
+  clear: both;
+  padding: 15px 0 0 0;
+  height: 178px; }
+
+.footer .connter .bottom div {
+  text-align: center; }
+
+.footer .connter .bottom .bt_nav {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #1d1c1c; }
+
+.footer .connter .bottom .bt_nav a {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #1d1c1c; }
+
+.footer .connter .bottom .copyright {
+  color: #999;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px; }
+
+.footer .connter .bottom .copyright span {
+  margin: 0 10px; }
+
+.footer .connter .bottom .copyright a {
+  font-size: 12px;
+  color: #1d1c1c; }
+
+/*  */
+.footer .connter .bottom .bt_a a {
+  display: inline-block;
+  height: 21px;
+  line-height: 21px;
+  font-size: 12px;
+  color: #363636;
+  padding-top: 5px; }
+
+.footer .connter .bottom .police {
+  height: 27px;
+  padding: 10px 0 20px 0;
+  margin: 0 auto; }
+
+.footer .connter .bottom .police a {
+  display: inline-block;
+  text-decoration: none;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px; }
+
+.footer .connter .bottom .police a img {
+  float: left;
+  width: 21px;
+  height: 21px; }
+
+.footer .connter .bottom .police a span {
+  float: left;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 5px;
+  padding: 0 8px; }

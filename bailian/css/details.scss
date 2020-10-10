@@ -1,0 +1,379 @@
+.nav .connter .nav_left .show_nav{
+    display: none;
+}
+.warp {
+    min-width: 1190px;
+}
+
+.warp .connter .warp_top {
+    clear: both;
+    width: 100%;
+    height: 37px;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.warp .connter .warp_top .crumb {
+    float: left;
+    font-family: SimSun;
+    line-height: 24px;
+    width: 630px;
+    padding-top: 13px;
+}
+
+.warp .connter .warp_top .crumb a {
+    font-size: 12px;
+    color: #333;
+}
+
+.warp .connter .warp_top .crumb i {
+    font-size: 12px;
+    color: #333;
+}
+
+.warp .connter .warp_top .seller-name {
+    width: 120px;
+    float: right;
+    line-height: 50px;
+    border: 1px solid #999;
+    background-color: #FFFFFF;
+}
+
+.warp .connter .warp_top .seller-name img {
+    width: 82px;
+    height: 44px;
+    margin-left: 18px;
+}
+
+.warp .connter .watp_bottom {
+    width: 1190px;
+    height: 598px;
+}
+
+.warp .connter .watp_bottom .intro-left {
+    float: left;
+    width: 450px;
+    height: 598px;
+    // background-color: #e6133c;
+
+}
+
+.warp .connter .watp_bottom .intro-right {
+    float: right;
+    width: 710px;
+    height: 598px;
+    // background-color: gold;
+}
+
+.warp .connter .watp_bottom .intro-right .goods-name h1 {
+    font-size: 20px;
+    color: #333;
+    line-height: 34px;
+    margin-top: -8px;
+    padding-bottom: 10px;
+}
+
+.warp .connter .watp_bottom .intro-right .goods-name h1 em {
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    display: inline;
+    background: #be4141;
+    // border: 1px solid  #be4141;
+    border-radius:4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 9px 6px 0 0;
+    // background-color: red;
+}
+
+.warp .connter .watp_bottom .intro-right .goods-name .title {
+    color: #333;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.warp .connter .watp_bottom .intro-right .goods-price {
+    width: 710px;
+    min-height: 68px;
+    background: #f9f9f9;
+    color: #333;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.warp .connter .watp_bottom .intro-right .goods-price .price-line {
+    width: 690px;
+    height: 48px;
+    line-height: 48px;
+    margin: 8px 0 0 10px;
+    float: left;
+    display: inline;
+}
+
+.warp .connter .watp_bottom .intro-right .goods-price .price-line span {
+    font-weight: 900;
+    color: #ec595c;
+    font-size: 30px;
+}
+
+.warp .connter .watp_bottom .intro-right .goods-price .price-line .black {
+    color: #333;
+    margin-right: 23px;
+    font-size: 12px;
+    width: 52px;
+    font-weight: normal;
+
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight {
+    height: 202px;
+    width: 710px;
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight .send-service dl {
+    padding: 5px 0;
+    margin: 5px 0;
+    float: left;
+    height: 32px;
+    display: inline;
+    width: 710px;
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight .pay-service .message-line {
+    height: 18px;
+    line-height: 18px;
+    margin-top: 3px;
+    display: inline;
+    margin-bottom: 18px;
+    font-size: 12px;
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight .pay-service .kong {
+    width: 600;
+    height: 37px;
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight .pay-service .type-table {
+    max-width: 490px;
+    height: auto;
+    line-height: 30px;
+    display: inline;
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight .pay-service .type-table li {
+    margin-right: 11px;
+    margin-top: 10px;
+    height: 28px;
+    color: #333;
+    line-height: 28px;
+    padding: 0 10px;
+    float: left;
+    border: 1px solid #d2d2d2;
+    font-size: 12px;
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight .pay-service .type-table .select {
+    background: url(../images/color-select.png) no-repeat right bottom;
+    color: #000;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 12px;
+    border: 2px solid #ec595c;
+    z-index: 99;
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight .pay-service dl .dd_li ul li {
+    color: #666;
+    float: left;
+    font-size: 12px;
+    padding: 0 20px 0 12px;
+    margin-left: 70px;
+    background: url(../images/purchase.png) no-repeat;
+    background-position: -162px -138px;
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight .pay-service ul .service-line {
+    clear: both;
+    margin-left: 70px;
+}
+
+.warp .connter .watp_bottom .intro-right .min-hight .details dl dt {
+    padding-left: 10px;
+    float: left;
+    width: 62px;
+    line-height: 22px;
+    color: #333;
+    height: 22px;
+    font-size: 12px;
+}
+
+.warp .connter .watp_bottom .intro-right dl {
+    padding: 5px 0;
+    float: left;
+    display: inline;
+    width: 710px;
+}
+
+.warp .connter .watp_bottom .intro-right dl .item-number {
+    padding-left: 10px;
+    float: left;
+    width: 62px;
+    line-height: 22px;
+    color: #333;
+    font-size: 12px;
+    height: 22px;
+}
+
+.warp .connter .watp_bottom .intro-right .buy-cart {
+    margin-top: 30px;
+    position: relative;
+    height: 45px;
+}
+
+.warp .connter .watp_bottom .intro-right .buy-cart dd button {
+    color: #ec595c;
+    border: 1px solid #ec595c;
+    height: 50px;
+    background: #fff8f9;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0 none;
+    cursor: pointer;
+    width: 170px;
+    float: left;
+    display: inline;
+    text-align: center;
+    border-radius: 2px;
+    margin-right: 10px;
+
+}
+
+.warp .connter .watp_bottom .intro-right .buy-cart dd .btn-buy {
+    background: #ec595c;
+    color: #fff;
+}
+
+.warp .connter .watp_bottom .intro-right .buy-cart a {
+    width: 48px;
+    height: 28px;
+    float: left;
+    border: 1px solid #d2d2d2;
+    background: url(../images/purchase.png) no-repeat;
+    background-position: -419px -48px;
+    text-align: center;
+    padding: 20px 0 0;
+    color: #999;
+    line-height: 28px;
+}
+
+.warp .connter .watp_bottom .intro-right .praise {
+    width: 600px;
+    padding: 20px 0 20px 84px;
+    float: left;
+    color: #333;
+    font-size: 14px;
+}
+
+
+.warp .connter .watp_bottom .intro-left .intro-meno-left {
+    margin: 15px 0 0;
+    height: 30px;
+    line-height: 32px;
+    color: #666;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.warp .connter .watp_bottom .intro-left .intro-meno-left .share-list {
+    padding: 2px 20px 10px;
+    width: 68px;
+    float: left;
+    height: 70px;
+}
+
+.warp .connter .watp_bottom .intro-left .spec-scroll {
+    margin-top: 15px;
+    clear: both;
+    height: 80px;
+    width: 450px;
+    // position: relative;
+}
+
+.warp .connter .watp_bottom .intro-left .spec-scroll img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border: 1px solid #999;
+}
+
+.warp .connter .watp_bottom .intro-left .intro-meno-left .share-list a {
+    padding-left: 8px;
+    display: inline;
+    width: 25px;
+    height: 24px;
+    // background: url(../images/ie7-start.png) no-repeat 1px -85px;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+.warp .connter .watp_bottom .intro-left .intro-meno-left .share-list b {
+    background: url(../images/ie7-start.png) no-repeat 1px -85px;
+    width: 25px;
+    height: 24px;
+    display: inline-block;
+}
+
+.warp .connter .watp_bottom .intro-left .intro-meno-left .number {
+    float: right;
+    font-size: 12px;
+}
+
+.warp .connter .watp_bottom .intro-left .spec-preview #small {
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    position: relative;
+    // left: 50px;
+    // top: 50px;
+ }
+
+.warp .connter .watp_bottom .intro-left .spec-preview #small img {
+    width: 100%;
+    height: 100%;
+}
+
+.warp .connter .watp_bottom .intro-left .spec-preview #small #mark {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    opacity: 0.5;
+    filter: (opacity=50);
+    position: absolute;
+    left:0px;
+    top: 0px;
+    z-index: 1000;
+}
+
+.warp .connter .watp_bottom .intro-left .spec-preview #big {
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    position: absolute;
+    left: 640px;
+    top: 260px;
+    display: none;
+    overflow: hidden;
+}
+
+.warp .connter .watp_bottom .intro-left .spec-preview #big img {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+}
+

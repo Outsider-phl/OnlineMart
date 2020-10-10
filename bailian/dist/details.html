@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/details.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+    <!-- 工具栏 -->
+    <div class="toolBar">
+        <div class="connter">
+            <div class="tool_left">
+                <span>百联集团旗下全渠道电商平台</span>
+                <b></b>
+            </div>
+            <div class="tool_nav">
+                <a href="#">
+                    <span>网站导航</span>
+                    <i></i>
+                </a>
+                <div class="tn_show">
+                    <dl>
+                        <dd><a href="#">百联集团官网</a></dd>
+                        <dd><a href="#">安付宝网</a></dd>
+                        <dd><a href="#">第一医药</a></dd>
+                        <dd><a href="#">OK会员网专区</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="tool_center">
+                <span>消息</span>
+            </div>
+            <div class="tool_right">
+                <ul>
+                    <li class="tool_li">
+                        <i></i>
+                        <a href="#">请登录</a>
+                        <a href="#">注册</a>
+                        <b></b>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>我的订单</span>
+                        </a>
+                        <b></b>
+
+                    </li>
+
+                    <li class="my_li">
+                        <a href="#">
+                            <span>我的百联</span>
+                            <i></i>
+                        </a>
+                        <b></b>
+                        <div class="tool_my">
+                            <ul>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的评价</a></li>
+                                <li><a href="#">我的积分</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                                <li><a href="#">我的优惠</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="tool_pay">
+                        <a href="#">
+                            <span>缴费充值</span>
+                            <i></i>
+                        </a>
+                        <b></b>
+                        <div class="payment">
+                            <div>
+                                <p>水电煤缴费</p>
+                                <ul>
+                                    <li><a href="#">缴费首页</a></li>
+                                    <li><a href="#">水费缴费</a></li>
+                                    <li><a href="#">电费缴费</a></li>
+                                    <li><a href="#">燃气缴费</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p>手机充值</p>
+                                <ul>
+                                    <li><a href="#">手机充值</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>其他缴费</p>
+                                <ul>
+                                    <li><a href="#">固话/宽带充值</a></li>
+                                    <li><a href="#">铁通缴费</a></li>
+                                    <li><a href="#">有线电视缴费</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>游戏点卡</p>
+                                <ul>
+                                    <li><a href="#">腾讯Q币充值</a></li>
+                                    <li><a href="#">盛大点券充值</a></li>
+                                    <li><a href="#">更多游戏</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <a href="#">
+                            <span>客户服务</span>
+                            <i></i>
+                        </a>
+                        <b></b>
+                        <div class="service_div">
+                            <ul>
+                                <li><a href="">在线客服</a></li>
+                                <li><a href="">帮助中心</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>掌上百联</span>
+                            <i></i>
+                        </a>
+                        <b></b>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>购物车</span>
+                        </a>
+                        <b></b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧侧边栏 -->
+    <div class="right_slidebar" id="rside">
+        <div class="right_slidebar_main">
+            <div class="main_top">
+                <div class="sidecss">
+                    <i></i>
+                    <div class="news">
+                        我的消息
+                    </div>
+                </div>
+                <div class="shopcar">
+                    <div class="car">
+                        <i></i>
+                    </div>
+                    <span>购<br>物<br>车</span>
+                    <b>0</b>
+                    <div class="sc_border"></div>
+                </div>
+
+                <div class="collect ">
+                    <i></i>
+                </div>
+                <div class="history">
+                    <i></i>
+                </div>
+            </div>
+            <div class="main_bottom">
+                <div class="qrcode">
+                    <i></i>
+                </div>
+                <div class="service">
+                    <i></i>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="right_slidebar_detail"></div>
+    </div>
+    <!-- 搜索栏 -->
+    <div class="header">
+        <div class="connter">
+            <div class="header_left">
+                <div class="hl_left">
+                    <a href=""><img src="images/header01.png" alt=""></a>
+                </div>
+                <div class="hl_right">
+                    <a href=""><img src="images/header02.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="header_right">
+                <div class="search_top">
+                    <div class="pay">
+                        <a href="#">安付宝OK卡专区
+                            <i></i>
+                        </a>
+
+                    </div>
+                    <div class="search">
+                        <input type="text" class="txt" value="太阳镜" />
+                        <input class="btn" type="submit" value="搜索" />
+                    </div>
+                </div>
+
+                <div class="search_bottom">
+                    <a href="#">面膜</a>
+                    <span>|</span>
+                    <a href="#">料酒</a>
+                    <span>|</span>
+                    <a href="#">洗面奶</a>
+                    <span>|</span>
+                    <a href="#">方便面</a>
+                    <span>|</span>
+                    <a href="#">冷饮</a>
+                    <span>|</span>
+                    <a href="#">赫莲娜</a>
+                    <span>|</span>
+                    <a href="#">味全</a>
+                    <span>|</span>
+                    <a href="#">黄酒</a>
+                    <span>|</span>
+                    <a href="#">光明牛奶</a>
+                    <span>|</span>
+                    <a href="#">酱油</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="connter">
+            <div class="nav_left">
+                <i></i>
+                <a href="#">
+                    <span>所有商品分类</span>
+                </a>
+                <div class="show_nav">
+                    <ul>
+                        <li>
+                            <i></i>
+                            <span>
+                                <a href="#">
+                                    百联进口 全球购
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -30px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    生鲜食品
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -60px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    食品粮油 酒水冲饮
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -90px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    美容护理
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -120px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    家清 纸品 一次性
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -150px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    手机数码 电脑办公
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -180px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    家用电器
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -210px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    母婴玩具
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -240px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    营养保健 第一医药
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -270px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    餐厨用具 家居家装
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -300px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    女装男装
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -330px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    餐厨用具 家居家装
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -360px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    运动户外 汽车用品
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <i style="background: url(images/nav02.png) 0 -390px no-repeat ;"></i>
+                            <span>
+                                <a href="#">
+                                    礼品卡 充值 服务
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav_right">
+                <li><a href="#">生活日用</a></li>
+                <li><a href="#">24H百货</a></li>
+                <li><a href="#">全球购</a></li>
+                <li><a href="#">精品闪购</a></li>
+                <li><a href="#">电器械</a></li>
+                <li><a href="#">百联卡</a></li>
+                <li><a href="#">百联到家</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 中间 -->
+    <div class="warp">
+        <div class="connter">
+            <div class="warp_top">
+                <div class="crumb">
+                    <a href="#" target="_blank">家用电器</a>
+                    <i>></i>
+                    <a href="#" target="_blank">大家电</a>
+                    <i>></i>
+                    <a href="#" target="_blank">冰箱</a>
+                    <i>></i>
+                    <a href="#" target="_blank">松下(Panasonic)</a>
+                </div>
+                <div class="seller-name">
+                    <a href="#">
+                        <img src="images/warp01.jpg" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+            <div class="watp_bottom">
+                <div class="intro-left">
+                    <div class="spec-preview">
+                        <div id="small">
+                            <img src="images/warp_tu01.jpg" alt="">
+                            <div id='mark'></div>
+                        </div>
+                        <div id="big">
+                            <img src="images/warp_tu01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="spec-scroll">
+                        <img src="images/warp_tu01.jpg" alt="">
+                    </div>
+                    <div class="intro-meno-left">
+                        <div class="share-list">
+                            <b></b>
+                            <a href="#">分享</a>
+                        </div>
+                        <div class="number">
+                            商品编号
+                            <span>302010156945</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="intro-right">
+                    <div class="goods-name">
+                        <h1><em>自营百联</em>
+                            松下（Panasonic）NR-F504VT-N5 六门冰箱 489升 香槟金 日本原装进口</h1>
+                        <div class="title">纳米水离子除味、净化冰箱环境，顶置压缩机设计，体积越小、容量越大、-3度微冻功能，无需解冻，长久保持食物新鲜，（宽 × 深 × 高）685 × 692 ×
+                            1828 (mm)</div>
+                    </div>
+                    <div class="goods-price">
+                        <div class="price-line">
+                            <span class="black">销售价</span><span><i>￥</i>13999.00</span>
+                        </div>
+                    </div>
+                    <div class="min-hight">
+                        <div class="send-service details">
+                            <dl>
+                                <dt>配送</dt>
+                            </dl>
+                        </div>
+                        <div class="pay-service details">
+                            <dl>
+                                <dt>服务</dt>
+                                <dd class="dd_li">
+                                    <div class="message-line">
+                                        本产品由供应商提供发货，并由百联云商提供售后服务
+                                    </div>
+                                    <div class="kong"></div>
+                                    <ul>
+                                        <li>不支持到店自提</li>
+                                        <li>支持7天无理由退货</li>
+                                        <li>不支持货到付款</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="service-line">发货时效(48小时内)</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="type-table details">
+                                <dl>
+                                    <dt>系列</dt>
+                                    <dd>
+                                        <ul class="color-list">
+                                            <li class="select">多门489升 进口冰箱</li>
+                                            <li>多门586升 进口冰箱</li>
+                                            <li>多门658升 进口冰箱</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <dl>
+                        <dt class="item-number">购买数量</dt>
+                    </dl>
+                    <dl class="buy-cart">
+                        <dt class="item-number"></dt>
+                        <dd>
+                            <button>立即购买</button>
+                            <button class="btn-buy">加入购物车</button>
+                            <a class="collect" href="#">收藏</a>
+                        </dd>
+                    </dl>
+                    <div class="praise">
+                        <span><em style="color: red;">100%</em>收藏</span>
+                        <i>|</i>
+                        <span><strong>1</strong>评价</span>
+                        <i>|</i>
+                        <span style="color: skyblue;">评价返积分</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="connter">
+            <div class="top">
+                <div class="footer_left">
+                    <div class="footer_title footer_ico1">
+                        新手入门
+                    </div>
+                    <ul>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">会员介绍</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">发票说明</a></li>
+                        <li><a href="#">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="footer_dc">
+                    <div class="footer_title footer_ico2">
+                        配送服务
+                    </div>
+                    <ul>
+                        <li><a href="#">配送范围及运费</a></li>
+                        <li><a href="#">配送进度查询</a></li>
+                        <li><a href="#">自提服务</a></li>
+                        <li><a href="#">商品验货与签收</a></li>
+                    </ul>
+                </div>
+                <div class="footer_center">
+                    <div class="footer_title footer_ico3">
+                        支付方式
+                    </div>
+                    <ul>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">在线支付</a></li>
+                    </ul>
+                </div>
+                <div class="footer_after">
+                    <div class="footer_title footer_ico4">
+                        售后服务
+                    </div>
+                    <ul>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">退款说明</a></li>
+                    </ul>
+                </div>
+                <div class="footer_right">
+                    <div class="footer_title footer_ico5">
+                        商家支持
+                    </div>
+                    <ul>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">商家规则</a></li>
+                        <li><a href="#">商家常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center">
+                <img src="images/footer02.jpg" alt="">
+                <img src="images/footer03.jpg" alt="">
+                <img src="images/footer04.jpg" alt="">
+            </div>
+            <div class="bottom">
+                <div class="bt_nav">
+                    <a href="">关于我们</a>
+                    <span>|</span>
+                    <a href="">联系我们</a>
+                    <span>|</span>
+                    <a href="">加盟合作</a>
+                    <span>|</span>
+                    <a href="">诚征英才</a>
+                    <span>|</span>
+                    <a href="">友情链接</a>
+                    <span>|</span>
+                    <a href="">新零售合作</a>
+                </div>
+                <div class="copyright">
+                    百联集团有限公司版权所有
+                    <span>|</span>
+                    客服电话:400-900-8800
+                    <span>|</span>
+                    <a href="">沪ICP备15028847号-1</a>
+                </div>
+                <div class="bt_a">
+                    <a href="">互联网药品信息服务资质证书编号:沪-(非营业性)-2016-0044</a>
+                    <br>
+                    <a href="">医疗器械网络交易服务第三方平台备案凭证-(沪）网械平台备字[2020]第00002号</a>
+                    <br>
+                    <a href="">全渠道增值电信业务经营许可证</a>
+                </div>
+
+                <div class="police">
+                    <a href="">
+                        <img src="images/footer05.png" alt="">
+                        <span>沪公网安备31010102002366号</span>
+                    </a>
+                    <a href="">
+                        <img src="images/footer06.png" alt="">
+                        <span>上海工商</span>
+                    </a>
+                    <a href="">
+                        <img src="images/footer07.png" alt="">
+                        <span>经营执照</span>
+                    </a>
+                    <a href="">
+                        <img src="images/footer08.png" alt="">
+                        <span>网购大家评</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

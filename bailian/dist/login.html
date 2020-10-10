@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎登录-百联</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <div class="register_top">
+        <div class="connter">
+            <img src="images/register01.png" alt="" srcset="">
+            <img src="images/login12.png" alt="" srcset="">
+        </div>
+    </div>
+    <div class="login_main">
+        <div class="login_content">
+            <div class="login_content_center">
+                <div class="top">
+                    <ul>
+                        <li class="title">
+                            <div class="left">扫码登录</div>
+                            <div class="right">会员登录</div>
+                        </li>
+                        <li class="scan">
+                            <img src="images/login.png" alt="">
+                            <p>打开<i>i百联</i>(7.0版本及以上) 扫描</p>
+                            <p class="style_txt">
+                                <i class="style_txt01">安全</i>
+                                <i class="style_txt02">便捷</i>
+                                <i class="style_txt03">免输入</i>
+                            </p>
+                        </li>
+                        <li class="member">
+                            <div class="login-item clearfix">
+                                <i>
+                                    <img src="images/login02.png" alt="">
+                                </i>
+                                <input type="text">
+                            </div>
+                            <div class="login-item clearfix">
+                                <i>
+                                    <img src="images/login03.png" alt="">
+                                </i>
+                                <input type="password" name="" id="">
+                            </div>
+                            <div class="login-font">
+                                <div class="fr">
+                                    <a href="#">忘记密码?</a>
+                                </div>
+                            </div>
+                            <div class="in_bu">
+                                <button id="btn1">登录</button>
+                            </div>
+                            <div class="prompt prompt_success">
+                                <span>登录成功</span>
+                            </div>
+                            <div class="prompt prompt_danger">
+                                <span>登录失败</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <a href="register.html" class="login-title-fr login-a-fl">注册新账号</a>
+                    <a href="" id="solidCart">百联通会员卡首次登录</a>
+                </div>
+                <div class="other">
+                    <span>其他账号联合登录</span>
+                </div>
+                <div class="bottom">
+                    <a href="#" style="background: url(images/login05.png) no-repeat 0 -22px;"></a>
+                    <a href="#" style="background: url(images/login06.png) no-repeat 0 -22px;"></a>
+                    <a href="#" style="background: url(images/login08.png) no-repeat 0 -22px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="connter">
+            <div class="bottom">
+                <div class="bt_nav">
+                    <a href="">关于我们</a>
+                    <span>|</span>
+                    <a href="">联系我们</a>
+                    <span>|</span>
+                    <a href="">加盟合作</a>
+                    <span>|</span>
+                    <a href="">诚征英才</a>
+                    <span>|</span>
+                    <a href="">友情链接</a>
+                    <span>|</span>
+                    <a href="">新零售合作</a>
+                </div>
+                <div class="copyright">
+                    百联集团有限公司版权所有
+                    <span>|</span>
+                    客服电话:400-900-8800
+                    <span>|</span>
+                    <a href="">沪ICP备15028847号-1</a>
+                </div>
+                <div class="bt_a">
+                    <a href="">互联网药品信息服务资质证书编号:沪-(非营业性)-2016-0044</a>
+                    <br>
+                    <a href="">医疗器械网络交易服务第三方平台备案凭证-(沪）网械平台备字[2020]第00002号</a>
+                    <br>
+                    <a href="">全渠道增值电信业务经营许可证</a>
+                </div>
+
+                <div class="police">
+                    <a href="">
+                        <img src="images/footer05.png" alt="">
+                        <span>沪公网安备31010102002366号</span>
+                    </a>
+                    <a href="">
+                        <img src="images/footer06.png" alt="">
+                        <span>上海工商</span>
+                    </a>
+                    <a href="">
+                        <img src="images/footer07.png" alt="">
+                        <span>经营执照</span>
+                    </a>
+                    <a href="">
+                        <img src="images/footer08.png" alt="">
+                        <span>网购大家评</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='module'>
+    import ajax from './ajax.js';
+    var oBtn = document.getElementById("btn1");
+    var aInput = document.querySelectorAll(".login-item input");
+    var oAlert = document.querySelector(".prompt");
+    oBtn.onclick = function(){
+      ajax({
+        type: 'post',
+        url: 'login.php',
+        data: {
+          username: aInput[0].value,
+          password: aInput[1].value,
+        },
+        success: function(msg){
+          // console.log(msg);
+          var obj = JSON.parse(msg); //JSON.parse (<anonymous>) 返回的字符串不是json格式。
+          if(obj.code){
+            oAlert.className = 'prompt prompt_danger';
+          }else{
+            oAlert.className = 'prompt prompt_success';
+          }
+          oAlert.style.display = 'block';
+          oAlert.innerHTML = obj.msg;
+        },
+        error: function(msg){
+          console.log(msg);
+        }
+      })
+    }
+</script>
+
+</html>

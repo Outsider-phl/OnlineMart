@@ -1,0 +1,105 @@
+/* .connter{
+    width: 1190px;
+    height: 430px;
+    margin: 0 auto;
+    background-color: rosybrown;
+} */
+.banner {
+    min-width: 1190px;
+    height: 430px;
+    background-color: darksalmon;
+}
+.banner .banner_eye{
+    min-width: 1190px;
+    height: 430px;
+}
+.banner .banner_eye .rollBody {
+    min-width: 1190px;
+    height: 430px;
+    overflow: hidden;
+}
+
+.banner .banner_eye .rollBody ul {
+    min-width: 1190px;
+    height: 430px;
+}
+
+.banner .banner_eye .rollBody ul li {
+    width: 100%;
+    height: 430px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner_eye .rollBody ul li a {
+    width: 785px;
+    height: 430px;
+}
+
+.banner .banner_eye .pagechange_ol {
+    width: 785px;
+    height: 80px;
+    list-style: none;
+    position: relative;
+    margin: 0 auto;
+    top: -255px;
+    background-color: salmon;
+    display: block;
+    pointer-events: none;
+}
+
+.banner .banner_eye .pagechange_ol .prev {
+    float: left;
+    width: 30px;
+    height: 60px;
+    position: relative;
+    top: 18px;
+    line-height: 70px;
+    background-image: url(../images/banner18.png);
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.banner .banner_eye .pagechange_ol .next {
+    float: right;
+    width: 30px;
+    height: 60px;
+    top: 18px;
+    line-height: 70px;
+    background-image: url(../images/banner18.png);
+    background-position: -30px 0;
+    cursor: pointer;
+    pointer-events: auto;
+    position: relative;
+}
+
+.banner .banner_eye .progress_bar_ol {
+    height: 20px;
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, .4); */
+    border-radius: 10px;
+
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner .banner_eye .progress_bar_ol li  {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.banner .banner_eye .progress_bar_ol .active{
+    background-color:black;
+    border: #999 solid 3px;
+}
